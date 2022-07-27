@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  EcommerceStore
-//
-//  Created by Radek Di Luca on 27/07/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

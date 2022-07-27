@@ -16,6 +16,9 @@
 		40F1D0DA28913CD3000B0A9B /* EcommerceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1D0D928913CD3000B0A9B /* EcommerceStoreTests.swift */; };
 		40F1D0E428913CD3000B0A9B /* EcommerceStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1D0E328913CD3000B0A9B /* EcommerceStoreUITests.swift */; };
 		40F1D0E628913CD3000B0A9B /* EcommerceStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1D0E528913CD3000B0A9B /* EcommerceStoreUITestsLaunchTests.swift */; };
+		40F1D0F328913D24000B0A9B /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1D0F228913D24000B0A9B /* ProductService.swift */; };
+		40F1D0F628914642000B0A9B /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1D0F428914642000B0A9B /* BasicCell.swift */; };
+		40F1D0F728914642000B0A9B /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F1D0F528914642000B0A9B /* BasicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		40F1D0DF28913CD3000B0A9B /* EcommerceStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcommerceStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F1D0E328913CD3000B0A9B /* EcommerceStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceStoreUITests.swift; sourceTree = "<group>"; };
 		40F1D0E528913CD3000B0A9B /* EcommerceStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40F1D0F228913D24000B0A9B /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		40F1D0F428914642000B0A9B /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		40F1D0F528914642000B0A9B /* BasicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		40F1D0C128913CD2000B0A9B /* EcommerceStore */ = {
 			isa = PBXGroup;
 			children = (
+				40F1D0D028913CD3000B0A9B /* Info.plist */,
 				40F1D0C228913CD2000B0A9B /* AppDelegate.swift */,
+				40F1D0F228913D24000B0A9B /* ProductService.swift */,
 				40F1D0C428913CD2000B0A9B /* SceneDelegate.swift */,
 				40F1D0C628913CD2000B0A9B /* ViewController.swift */,
-				40F1D0C828913CD2000B0A9B /* Main.storyboard */,
 				40F1D0CB28913CD2000B0A9B /* Assets.xcassets */,
+				40F1D0F82891464E000B0A9B /* BasicCell */,
 				40F1D0CD28913CD3000B0A9B /* LaunchScreen.storyboard */,
-				40F1D0D028913CD3000B0A9B /* Info.plist */,
+				40F1D0C828913CD2000B0A9B /* Main.storyboard */,
 			);
 			path = EcommerceStore;
 			sourceTree = "<group>";
@@ -125,6 +133,15 @@
 				40F1D0E528913CD3000B0A9B /* EcommerceStoreUITestsLaunchTests.swift */,
 			);
 			path = EcommerceStoreUITests;
+			sourceTree = "<group>";
+		};
+		40F1D0F82891464E000B0A9B /* BasicCell */ = {
+			isa = PBXGroup;
+			children = (
+				40F1D0F428914642000B0A9B /* BasicCell.swift */,
+				40F1D0F528914642000B0A9B /* BasicCell.xib */,
+			);
+			path = BasicCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F1D0F728914642000B0A9B /* BasicCell.xib in Resources */,
 				40F1D0CF28913CD3000B0A9B /* LaunchScreen.storyboard in Resources */,
 				40F1D0CC28913CD2000B0A9B /* Assets.xcassets in Resources */,
 				40F1D0CA28913CD2000B0A9B /* Main.storyboard in Resources */,
@@ -258,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F1D0F628914642000B0A9B /* BasicCell.swift in Sources */,
+				40F1D0F328913D24000B0A9B /* ProductService.swift in Sources */,
 				40F1D0C728913CD2000B0A9B /* ViewController.swift in Sources */,
 				40F1D0C328913CD2000B0A9B /* AppDelegate.swift in Sources */,
 				40F1D0C528913CD2000B0A9B /* SceneDelegate.swift in Sources */,
@@ -437,6 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcommerceStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcommerceStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -491,6 +513,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -510,6 +533,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -528,6 +552,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = YNAP.EcommerceStoreUITests;
@@ -545,6 +570,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D87LN24Y8R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = YNAP.EcommerceStoreUITests;
