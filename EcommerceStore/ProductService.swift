@@ -5,7 +5,6 @@ final class ProductService {
     private init() {}
 
     func fetchProductList(_ completion: @escaping ([Item]) -> Void) {
-        // https://api.yoox.biz/Search.API/1.3/CHLOE_GB/search/results.json?ave=prod&productsPerPage=50&gender=D&page=1&department=shssnkrs&format=lite&sortRule=Ranking
         var urlComponents: URLComponents? = .init(string: "https://api.yoox.biz/Search.API/1.3/CHLOE_GB/search/results.json")
         urlComponents?.queryItems = [
             URLQueryItem(name: "ave", value: "prod"),
